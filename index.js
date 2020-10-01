@@ -41,7 +41,7 @@ async function main() {
   app.use('/user', require('./routes/user'));
   app.use('/api', require('./routes/api'));
 
-  app.listen(3000, () => {
+  app.listen(process.env.PORT, () => {
     console.log("Server has started");
   });
 }
